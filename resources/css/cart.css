@@ -1,0 +1,140 @@
+.totalContainer {
+  /* Center all the child elements of the parent totalContainer by making it a flex container and using justify-content */
+  display: flex;
+  justify-content: center;
+}
+
+.total {
+  /* specify the absolute height of the total cost of the cart */
+  height: 40px;
+}
+
+.total-title {
+  /*Style the title element for the total cost of the cart*/
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-top: 1px solid lightslategrey;
+}
+
+.total-price {
+  /*style the total price element*/
+  color: darkblue;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-buy {
+  /*style the buy button*/
+  margin-top: 14px;
+  background-color: darkgreen;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: white;
+  padding: 6px 0;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* when the btn-buy is hovered over by the user's mouse then the style declaration below will be applied */
+.btn-buy:hover {
+  background-color: rgb(83, 233, 83);
+  color: black;
+  border: 1px solid black;
+}
+
+.finalTotal {
+  background-color: blue;
+  color: white;
+  position: fixed;
+  padding: 10px;
+  border-radius: 5px;
+  top: 27%;
+  z-index: 1;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 11% 0;
+  z-index: -1;
+}
+
+.cart-title {
+  color: darkblue;
+  padding-bottom: 4px;
+  border-bottom: 1px solid darkgray;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  height: 170px;
+  border: 2px solid darkgray;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px auto;
+  position: relative;
+}
+
+.cart-content {
+  height: 470px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.cart-content::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-details {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin-left: 3%;
+}
+
+.item-name {
+  font-weight: 700;
+}
+
+.quantity-adjuster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.delete {
+  /*style the delete button*/
+  position: absolute;
+  font-size: 1.8rem;
+  top: 5px;
+  right: 5px;
+  color: crimson;
+  cursor: pointer;
+}
+
+.reduce,
+.increase {
+  font-size: 1.5rem;
+  color: blue;
+  cursor: pointer;
+}
+
+.quantity-count {
+  margin: 0 7px;
+}
+
+/* the media query adjusts the height of the cart content element to 840px when the height of the screen is 1000px or greater */
+@media (min-height: 1000px) {
+  .cart-content {
+    height: 840px;
+  }
+}
