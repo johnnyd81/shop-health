@@ -5,7 +5,7 @@
 }
 
 .total {
-  /* specify the absolute height of the total cost of the cart */
+  /* specify the absolute height of the total cost of the items in the cart */
   height: 40px;
 }
 
