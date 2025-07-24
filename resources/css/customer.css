@@ -34,7 +34,7 @@ ul li {
 }
 
 .navLinks {
-  /*Center the navLinks*/
+  /*Center the navLinks using the text-align property*/
   text-align: center;
 }
 
