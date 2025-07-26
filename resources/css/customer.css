@@ -39,7 +39,7 @@ ul li {
 }
 
 .logo-box {
-  padding-top: 3px;
+  padding-top: 3px;/*adds space within the element*/
 }
 
 .logo-box > .logo-pic {
