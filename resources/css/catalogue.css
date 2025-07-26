@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-  /* changes the color and text-shadow of the link when a user hovers over it */
+  /* changes the color and text-shadow of the link element when a user hovers over it */
   color: gold;
   text-shadow: 1px 1px 2px black;
 }
